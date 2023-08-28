@@ -1,0 +1,31 @@
+assert(getrawmetatable)
+grm = getrawmetatable(game)
+setreadonly(grm, false)
+old = grm.__namecall
+grm.__namecall = newcclosure(function(self, ...)
+    local args = {...}
+    if tostring(args[1]) == "4!" then
+        return
+    elseif tostring(args[1]) == "11!" then
+        return
+    elseif tostring(args[1]) == "StopBro" then
+        return
+    elseif tostring(args[1]) == "Stomp" then
+        return
+    elseif tostring(args[1]) == "Grabbing" then
+        return
+    elseif tostring(args[1]) == "Block" then
+        return
+    elseif tostring(args[1]) == "" then
+        return
+    elseif tostring(args[1]) == "" then
+        return
+    elseif tostring(args[1]) == "" then
+        return
+    elseif tostring(args[1]) == "" then
+        return
+    elseif tostring(args[1]) == "" then
+        return
+    end
+    return old(self, ...)
+end)

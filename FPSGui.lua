@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dawn-spec/beefblox/main/README.md"))()

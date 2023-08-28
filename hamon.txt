@@ -1,0 +1,2 @@
+local mainevent = game.ReplicatedStorage:WaitForChild("MainEvent")
+mainevent:FireServer("BreathingHAMON")

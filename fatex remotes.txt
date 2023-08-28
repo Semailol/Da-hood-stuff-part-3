@@ -1,0 +1,28 @@
+game.ReplicatedStorage.MainRemote:FireServer("Block", true);
+ame.ReplicatedStorage.MainRemote:FireServer("Stomp", nil);
+game.ReplicatedStorage.MainRemote:FireServer("Grabbing", false);
+game.ReplicatedStorage.MainRemote:FireServer("Reload");
+game.ReplicatedStorage.MainRemote:FireServer("Emote", v48.Name);
+game.ReplicatedStorage.MainRemote:FireServer("BloodEnabled", not l__BloodEnabled__43.Value);
+game.ReplicatedStorage.MainRemote:FireServer("Skin", l__MainScreenGui__30.Crew.Settings.Settings.Skins.TextBox.Text);
+game.ReplicatedStorage.MainRemote:FireServer("PhoneCall", game.Players[v133.Text]);
+game.ReplicatedStorage.MainRemote:FireServer("ToggleMerryWeather", false);
+game.ReplicatedStorage.MainRemote:FireServer("KickDoor");
+game.ReplicatedStorage.MainRemote:FireServer("LootBox", u41);
+game.ReplicatedStorage.MainRemote:FireServer("LootBox");
+
+--boombox
+game.ReplicatedStorage.MainRemote:FireServer("Play", l__MainScreenGui__30.BoomboxFrame.TextBox.Text);
+l__LocalPlayer__2.Character:FindFirstChild("[Boombox]").Parent = l__LocalPlayer__2.Backpack;
+game.ReplicatedStorage.MainRemote:FireServer("Stop");
+game.ReplicatedStorage.MainRemote:FireServer("Remove");
+--
+game.ReplicatedStorage.MainRemote:FireServer("DropMoney", tonumber(l__MainScreenGui__30.WalletDrop.TextBox.Text));
+game.ReplicatedStorage.MainRemote:FireServer("Truck");
+game.ReplicatedStorage.MainRemote:FireServer("StopTruck");
+game.ReplicatedStorage.MainRemote:FireServer("GamePurchase", v243.Name);
+game.ReplicatedStorage.MainRemote:FireServer("QuitLobby", l__LocalPlayer__2.Name);
+game.ReplicatedStorage.MainRemote:FireServer("LeaveCrew");
+game.ReplicatedStorage.MainRemote:FireServer("Crew", l__MainScreenGui__30.Crew.JoinFrame.TextBox.Text);
+game.ReplicatedStorage.MainRemote:FireServer("JOINVC", v335, v336);
+v19:FindFirstChildOfClass("RemoteEvent"):FireServer("MousePos", v339, "P");
